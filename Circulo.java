@@ -22,11 +22,7 @@ public class Circulo extends FormaGeometrica {
 	@Override
 	public String toString() {
 		return String.format(
-				"Círculo na posição (%d, %d) com raio de %.1fcm (área=%.14fcm2, perímetro=%.14fcm)",
-				this.posX, this.posY, this.raio, this.getArea(), this.getPerimetro());
+				"Círculo na posição (%d, %d) com raio de %.1fcm (área=%scm2, perímetro=%scm)",
+				this.posX, this.posY, this.raio, Double.toString(this.getArea()), Double.toString(this.getPerimetro()));
 	}
-	
-	//public static void main(String[] args) {
-	//	System.out.println(new Circulo(32, 87, 6));
-	//}
 }
